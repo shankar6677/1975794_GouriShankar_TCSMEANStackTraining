@@ -1,0 +1,34 @@
+
+#d1 {
+text-align: center;
+background-color: aqua;
+padding: 10px;
+margin: 30px;
+
+}
+
+#d2 {
+   text-align: center;
+   font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    color: lightcoral;
+}
+
+#d3{
+    text-align: center;
+    font-style: oblique;
+    text-transform: capitalize;
+    border: solid blue 2px;
+    border-radius: 60px;
+    width: 400px;
+    margin: auto;
+    
+    
+}
+
+.button:hover{
+    width: 100px;
+    height: 40px;
+    color: blue;
+}
