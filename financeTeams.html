@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Finance Team</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="centered">
+            <div class="title">Annual Budget</div>
+           
+            <table class="table" id="customers">
+              <thead>
+                <tr>
+                  <th>Client Name</th>
+                  <th>Project Name</th>
+                  <th>Budget</th>
+                </tr>
+              </thead>
+              <tbody id="append_data"></tbody>
+            </table>
+            <div class="back">
+               <a href="./budgetPlanner.html">Back</a> 
+            </div>
+          </div>
+          <script type="text/javascript">
+            var val = '';
+            var total = 0;
+            var client = JSON.parse(window.localStorage.getItem('getData'));                         
+            for (let i = 0; i < client.length; i++) {        
+              val +='<tr>';     
+                val +='<td>'+client[i]['cname']+'</td>';
+                val +='<td>'+client[i]['pname']+'</td>';
+                val +='<td>'+client[i]['budget']+'</td>';
+                val +='</tr>';
+              total = parseInt(total) + parseInt(client[i]['budget']);
+            }
+            val +='<tr>';     
+              val +='<td></td>';
+              val +='<td>Total</td>';
+              val +='<td>'+total+'</td>';
+              val +='</tr>';
+            $("#append_data").html(val);
+          </script>
+    </body>
+</html>

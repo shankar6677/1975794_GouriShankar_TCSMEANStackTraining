@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Project Managers</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="centered">
+          <div class="title">Add New Budget</div>
+          <form method="post">
+            <div class="form-group">
+              <label for="cname">Client Name</label>
+              <input type="text" class="form-control form_field" id="cname">
+            </div>
+            <div class="form-group">
+              <label for="pname">Project Name</label>
+              <input type="text" class="form-control form_field" id="pname">
+            </div>
+            <div class="form-group">
+              <label for="budget">Budget</label>
+              <input type="text" class="form-control form_field" id="budget">
+            </div>
+            
+            <button type="button" name="submit" id="submit" class="btn btn-default">Add</button>
+            <input type="button" id="Reset" value="Reset" class="btn btn-default" onclick="reset()"></button>
+          </form>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="back">
+                <a href="./budgetPlanner.html">Back</a> 
+             </div>
+            </div>
+          </div>
+          
+         
+        </div>
+
+
+        <script type="text/javascript">
+          window.localStorage.clear();
+          var getData = [];
+          $('#submit').click(function(){
+          
+            var data = {
+              cname: $("#cname").val(),
+              pname: $("#pname").val(),
+              budget: $("#budget").val(),
+            }
+            getData.push(data);
+            window.localStorage.setItem('getData', JSON.stringify(getData));
+            $(".form_field").val('');
+          });
+          function reset(){
+    document.getElementById("cname").value="";
+    document.getElementById("pname").value="";
+    document.getElementById("budget").value="";
+}
+
+        </script>
+        
+    </body>
+</html>
