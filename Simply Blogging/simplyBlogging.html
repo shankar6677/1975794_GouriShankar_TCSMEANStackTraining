@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <title>Simply Bogging</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='simplyBlogging.js'></script>
+    <link rel="stylesheet" href="simplyBlogging.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid" style="float: right;">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Add Blog</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="title-class">Simple Blog</div>
+        <form class='form-group'>
+            <div>
+                <div class="col-form-label">
+                    <label class='form'>Title: </label>
+                    <input type='text' id='title' class='form-control-text'><br>
+                </div>
+                <div class='mb-3'>
+                    <label class='form'>Articles: </label>
+                    <textarea id='desp' class='form-control' style="width: 400px;" rows='3'></textarea>
+                </div>
+            </div>
+            <div class="ig-place">
+                <label class='form'>Add Image: </label>
+                <input type="file" id='imgID' class='form-control' style="width: 400px">
+            </div>
+
+            <div class="buttons">
+                <input type="button" value='Post' onclick='addBlog();' class='btn btn-success'>
+                <input type="button" value='Reset Blog' onclick='DeleteBlog();' class='btn btn-danger'>
+            </div>
+        </form>
+    </div>
+
+
+    <div class="container-fluid" id='table'>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="box-content">
+                    <div class=row id='Trow'>
+                        <h2 id='Btitle' style=" font-family: fantasy;"> </h2>
+                        <div id='Btext'> </div>
+                        <img id='Bimg' width='40' src='' class="rounded float-right">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        startpage();
+    </script>
+    </body>
+
+</html>
