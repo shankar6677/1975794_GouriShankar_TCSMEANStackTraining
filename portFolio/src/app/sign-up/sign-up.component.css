@@ -1,0 +1,50 @@
+.contentSignUp {
+    text-align: center;
+    background-color: #ececec;
+    border: 3px solid #969696;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 2px 3px 5px #685c46;
+    opacity: .8;
+    transition: .3s ease;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contentSignUp:hover{
+    opacity: 1;
+    transition: .3s ease;
+}
+
+form #textInput{
+    text-align: left;
+    color: rgb(129, 92, 92);
+    padding:10px;
+}
+
+form #textInput input{
+
+    justify-content: center;
+    background: #f7f7f7;
+    color: #969696;
+}
+
+#prompt {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+form #submitInput{
+    margin-right: 10px;
+}
+
+form #submitInput input{
+    margin: 20px 30px 5px 30px;
+    width: 30%;
+}
+
+.footer{
+    padding: 20px 0px 15px 0px;
+}

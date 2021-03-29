@@ -1,0 +1,31 @@
+<H2 id="prompt" class="display-3">Create an Account</H2>
+<div class="contentSignUp">
+    <p class="lead">Please complete the following fields</p>
+    <p><strong>{{msg}}</strong></p>
+
+    <form [formGroup]="signRef" (ngSubmit)="storeCredentials()">
+        <div class="form-group" id="textInput">
+            <label for="userSign">First Name</label>
+            <input class="form-control" type="text" id="userSign" formControlName="signF" placeholder="Enter Full First Name"/>
+        </div>
+        <div class="form-group" id="textInput">
+            <label for="userLast">Last Name</label>
+            <input class="form-control" type="text" id="userLast" formControlName="signL" placeholder="Enter Full Last Name"/>
+        </div>
+        <div class="form-group" id="textInput">
+            <label for="userSign">Username</label>
+            <input class="form-control" type="text" id="userSign" formControlName="signUser" placeholder="Create a Username"/>
+        </div>
+        <div class="form-group" id="textInput">
+            <label for="userSign">Password</label>
+            <input class="form-control" type="password" id="userSign" formControlName="signPass" placeholder="Create a Password"/>
+        </div>
+        <div class="form-group" id="submitInput">
+            <input class="btn btn-outline-dark" type="reset" value="Reset Fields"/>
+            <input class="btn btn-outline-dark" type="submit" value="Register Account"/>
+        </div>  
+    </form>
+    <div class="footer">
+        <input class="btn btn-outline-success" type="button" value="Go Back" (click)="loginClick()"/>
+    </div>
+</div>

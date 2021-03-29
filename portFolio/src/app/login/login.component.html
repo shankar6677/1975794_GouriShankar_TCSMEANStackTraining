@@ -1,0 +1,21 @@
+<H2 id="intro" class="display-3">Welcome!</H2>
+
+<div class="contentLogin">
+    <p class="lead"> Login to Continue</p>
+    <p><strong>{{msg}}</strong></p>
+
+    <form [formGroup]="loginRef" (ngSubmit)="checkUserValid()">
+        <div class="form-group" id="textInput">
+            <label for="userlogin">Username</label>
+            <input class="form-control" id="userlogin" placeholder="Enter Username" type="text" formControlName="username"/>
+        </div>
+        <div class="form-group" id="textInput">
+            <label for="userPass" >Password</label>
+            <input class="form-control" id="userPass" placeholder="Enter Password" type="password" formControlName="password"/>
+        </div>
+        <div class="form-group" id="submitInput">
+            <input class="btn btn-outline-success" id="submitInput" type="button" value="Sign Me Up!" (click)="signMeUpClick()"/>
+            <input class="btn btn-outline-dark" type="submit" value="Login"/>
+        </div>
+    </form>
+</div>

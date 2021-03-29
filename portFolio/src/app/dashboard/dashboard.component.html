@@ -1,0 +1,41 @@
+<h2 id="intro" class="display-3">Welcome {{usercontact}}</h2>
+
+<div class="contentDash">
+    <form [formGroup]="contactForm" (ngSubmit)="addContactt()">
+        <div class="form-group" id="textInput">
+            <label for="contactName">Contact Full Name</label>
+            <input class="form-control" id="contactName" formControlName="contactName" placeholder="Enter Contact's Full Name" type="text" #cname />
+        </div>
+        <div class="form-group" id="textInput">
+            <label for="contactNum">Number</label>
+            <input class="form-control" id="contactNum" formControlName="contactNumber" placeholder="Enter Contact's Phone Number" type="number" #cnumber />
+        </div>
+        <div class="form-group" id="submitInfo">
+            <input class="btn btn-outline-dark" id="submitInput" type="button" value="Logout" (click)="logoutClick()"/>
+            <input class="btn btn-outline-dark" type="reset" value="Clear" id="submitInput"/>
+            <input class="btn btn-outline-success" type="submit" value="Save Contact" [disabled]="contactForm.invalid"/>
+        </div>
+        
+</form>
+<!--<input type="button" value="Save Contact" (click)="addContact(cname.value, cnumber.value)"/>-->
+
+</div>
+<h2 id="tableIntro" class="display-4">Contact Details</h2>
+<div class="contentTable">
+<p>
+    <small class="text-muted">{{fname}} {{lname}}'s Professional Contact Details</small>
+</p>
+
+    <table class="table">
+        <thead class="thead-light">
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Phone Number</th>
+        </tr>
+    </thead>
+        <tr *ngFor="let con of contacts">
+            <td>{{con.contactName}}</td>
+            <td>{{con.contactNumber}}</td>
+        </tr>
+    </table>
+</div>

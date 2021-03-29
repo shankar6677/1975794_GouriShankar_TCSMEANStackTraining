@@ -1,0 +1,66 @@
+.contentDash {
+    text-align: center;
+    background-color: #ececec;
+    border: 3px solid #969696;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 2px 3px 5px #685c46;
+    opacity: .8;
+    transition: .3s ease;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contentDash:hover{
+    opacity: 1;
+    transition: .3s ease;
+}
+form #textInput{
+    text-align: left;
+    color: black;
+    padding:10px;
+}
+
+form #textInput input{   
+    justify-content: center;
+    background: #f7f7f7;
+    color: #969696;
+}
+
+form #submitInfo{
+    margin-right: 10px;
+}
+form #submitInfo input{
+    margin: 20px 30px 5px 30px;
+    width: 20%;
+}
+#intro {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.contentTable{
+    text-align: center;
+    background-color: #ececec;
+    border: 3px solid #969696;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 2px 3px 5px #685c46;
+    opacity: .8;
+    transition: .3s ease;
+    width: 80%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contentTable:hover{
+    opacity: 1;
+    transition: .3s ease;
+}
+#tableIntro {
+    text-align: center;
+    padding: 30px 0px 0px 0px;
+}
