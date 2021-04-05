@@ -1,0 +1,19 @@
+mat-form-field {
+    margin-bottom: 20px;
+}
+
+form {
+    margin-left: 40px;
+}
+
+table {
+    margin-left: 40px;
+    width: 50%;
+}
+.for-todo{
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
