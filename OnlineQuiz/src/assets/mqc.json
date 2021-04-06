@@ -1,0 +1,12 @@
+[
+    {"Id": 1, "ques": "What is the sum of first five even numbers?", "ans1": "10", "ans2": "20", "ans3": "30", "ans4": "40", "correctAnswer": "30"},
+    {"Id": 2, "ques": "What is the sum of first five odd numbers?", "ans1": "25", "ans2": "30", "ans3": "35", "ans4": "40", "correctAnswer": "25"},
+    {"Id": 3, "ques": "Select the prime number from the options below", "ans1": "39", "ans2": "57", "ans3": "69", "ans4": "79", "correctAnswer": "79"},
+    {"Id": 4, "ques": "What is the square root of 625?", "ans1": "5", "ans2": "15", "ans3": "25", "ans4": "35", "correctAnswer": "25"},
+    {"Id": 5, "ques": "How many continents are there in the world?", "ans1": "7", "ans2": "6", "ans3": "5", "ans4": "8", "correctAnswer": "7"},
+    {"Id": 6, "ques": "What is the biggest continent in the world?", "ans1": "North America", "ans2": "Australia", "ans3": "Asia", "ans4": "Europe", "correctAnswer": "Asia"},
+    {"Id": 7, "ques": "What is the smallest continent in the world?", "ans1": "Australia", "ans2": "North America", "ans3": "Asia", "ans4": "Europe", "correctAnswer": "Australia"},
+    {"Id": 8, "ques": "What is the nearest planet to earth?", "ans1": "Mercury", "ans2": "Jupiter", "ans3": "Pluto", "ans4": "Mars", "correctAnswer": "Mars"},
+    {"Id": 9, "ques": "What is the farthest planet to earth?", "ans1": "Mercury", "ans2": "Pluto", "ans3": "Mars", "ans4": "Jupiter", "correctAnswer": "Pluto"},
+    {"Id": 10, "ques": "What is the biggest planet in the solar system?", "ans1": "Jupiter", "ans2": "Mercury", "ans3": "Mars", "ans4": "Pluto", "correctAnswer": "Jupiter"}
+]
